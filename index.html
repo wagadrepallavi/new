@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+             <a href="index.html"><img src="images/l.jpg" ></a> 
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideManu()"></i>
+                 <ul>
+                     <li><a href="">HOME</a></li>
+                     <li><a href="">ABOUT</a></li>
+                     <li><a href="">COURSE</a></li>
+                     <li><a href="">BLOG</a></li>
+                     <li><a href="">CONTACT</a></li>
+                 </ul>
+             </div>
+             <i class="fa fa-bars"onclick="showManu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>World's Biggest University</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptates in suscipit quas! Mollitia soluta, modi
+     earum similique dolor rerum natus aliquid repellendus eos vel, <br>iure nulla velit quos ad.
+</p>
+<a href="" class ="hero-btn">Visit Us To Know More</a>
+</div>
+    </section>
+
+    <!----------Course-------------->
+    <section class="course">
+        <h1>
+            Courses We Offer
+        </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem perspiciatis ipsa fugit, mollitia beatae, impedit distinctio incidunt, quam ducimus 
+            eligendi cumque. Odio perferendis repudiandae esse. Fugiat quaerat doloribus quae fugit!</p>
+    </section>
+<!--------------------JavaScript -------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showManu(){
+            navLinks.style.right = "0";
+        }
+        function hideManu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
